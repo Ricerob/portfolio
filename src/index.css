@@ -1,0 +1,57 @@
+/* src/index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Fonts */
+
+@layer base {
+  /* @font-face {
+    font-family: 'Archivo';
+    src: url('./fonts/ArchivoBlack-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  } */
+
+  @font-face {
+    font-family: 'CabinetGrotesk';
+    src: url('./fonts/CabinetGrotesk-Variable.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* @font-face {
+    font-family: 'DMSerif';
+    src: url('./fonts/DMSerifDisplay-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  } */
+
+  /* @font-face {
+    font-family: 'Rubik';
+    src: url('./fonts/RubikBubbles-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  } */
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('./fonts/Satoshi-Variable.ttf') format('truetype'),
+      url('./fonts/Satoshi-VariableItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal, italic;
+  }
+
+  /* @font-face {
+    font-family: 'Whisper';
+    src: url('./fonts/Whisper-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  } */
+}
