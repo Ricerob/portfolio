@@ -15,6 +15,13 @@ module.exports = {
         whisper: ['Whisper', 'sans-serif'],
       },
     },
+    colors: {
+      'white': '#FFFFF4',
+      'l-brown': '#B8B0A3',
+      'brown': '#513D2A',
+      'd-green': '#294126',
+      'l-green': '#889886'
+    }
   },
   plugins: [],
 }
