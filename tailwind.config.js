@@ -13,6 +13,9 @@ module.exports = {
         bubbles: ['"Rubik Bubbles"', 'sans-serif'],
         satoshi: ['Satoshi', 'sans-serif'],
         whisper: ['Whisper', 'sans-serif'],
+        baskerville: ['"Libre Baskerville"', 'serif'],
+        helvetica: ['Helvetica', 'serif'],
+        stix: ['STIXGeneral', 'serif']
       },
     },
     colors: {
