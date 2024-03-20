@@ -111,3 +111,95 @@ h6 {
   font-family: 'Baskerville';
   color: #294126;
 }
+
+.grey {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+#landing-name-bottom-border::after {
+  content: "";
+  position: absolute;
+  bottom: 28%;
+  left: -5%;
+  transform: translate(5%);
+  width: 85%; /* Adjust this value to control the width of the border */
+  height: 1px; /* Adjust this value to control the thickness of the border */
+  background-color: #294126; /* Adjust the color of the border as needed */
+}
+
+#landing-star-svg {
+  transform: translateY(220%);
+  margin-right: 8px;
+}
+
+#image-row-empty-border::before {
+  content: '';
+  position: absolute;
+  left: calc(100vw - 25%);
+  width: 1px;
+  height: 130%;
+  transform: translateY(-20%);
+  background-color: #294126;
+}
+
+#action-row-top-border::before {
+  content: '';
+  position: absolute;
+  left: calc(100vw - 25%);
+  width: 40%;
+  height: 1px;
+  background-color: #294126;
+  transform: translateX(-68%);
+}
+
+#image-row-right-border img {
+  position: absolute;
+  z-index: 2;
+}
+
+#image-row-right-border {
+  overflow: hidden;
+  position: relative;
+}
+
+#monstera-img {
+  width: 650px;
+  height: auto;
+  left: 10px;
+  top: 15px;
+}
+
+#terrace-img {
+  width: 250px;
+  height: auto;
+  margin-left: 10px;
+  transform: translateY(-16%);
+}
+
+#water-img {
+  filter: grayscale(100%);
+  width: 250px;
+  height: auto;
+  z-index: 3;
+  left: 630px;
+  top: 75px;
+  margin-right: 8px;
+}
+
+#butterfly-img {
+  width: 150px;
+  height: auto;
+  z-index: 3;
+  right: 30px;
+  bottom: 150px;
+}
+
+#curated {
+  font-size: 50px;
+  transform: translateY(-60%);
+}
+
+#circle-svg {
+  margin-right: 8px;
+}
