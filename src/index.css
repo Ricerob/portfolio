@@ -129,8 +129,12 @@ h6 {
 }
 
 #landing-star-svg {
-  transform: translateY(220%);
+  /* transform: translateY(220%); */
+  margin-top: 112px;
   margin-right: 8px;
+  animation: rotateAnimation ease-in-out infinite;
+  animation-duration: 3s;
+  animation-delay: 2s;
 }
 
 #image-row-empty-border::before {
@@ -202,4 +206,47 @@ h6 {
 
 #circle-svg {
   margin-right: 8px;
+}
+
+.intro-link {
+  color: #513D2A;
+  position: relative;
+  cursor: pointer;
+  font-family: 'STIXGeneral';
+  transition: all 90ms ease;
+}
+
+.intro-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #294126;
+  transform: translateY(-5%);
+}
+
+.intro-link:hover {
+  opacity: 50%;
+  transition-delay: 50ms;
+}
+
+.randomRotate {
+  animation: rotateAnimation ease-in-out 2;
+}
+
+@keyframes rotateAnimation {
+  0% {
+      transform: rotate(0deg); /* Slight counterclockwise start */
+  }
+  10% {
+    transform: rotate(-5deg);
+  }
+  90% {
+      transform: rotate(80deg); /* Clockwise rotation */
+  }
+  100% {
+      transform: rotate(90deg); /* Final position */
+  }
 }

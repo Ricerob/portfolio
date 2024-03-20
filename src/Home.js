@@ -14,20 +14,20 @@ export default function Home(props) {
         tl.fromTo(
             textRef.current,
             { scale: 0, opacity: 0 },
-            { scale: 1, opacity: 1, duration: 0.5, ease: "elastic.in" }
+            { scale: 1, opacity: 1, duration: 0.75, ease: "elastic.in" }
         )
-            // .to(textRef.current, { duration: 0.25, fontFamily: "Satoshi", scale: 1.1, ease: "sine.inOut" })
-            // .to(textRef.current, { duration: 0.25, fontFamily: "Whisper", scale: 1.2, ease: "sine.inOut" })
-            // .to(textRef.current, { duration: 0.25, fontFamily: "Archivo", scale: 1.3, ease: "sine.inOut" })
-            // .to(textRef.current, { duration: 0.25, fontFamily: "Rubik Bubbles", scale: 1.2, ease: "sine.inOut" })
-            // .to(textRef.current, { duration: 0.25, fontFamily: "DM Serif Display", scale: 1.1, ease: "sine.inOut" })
-            // .to(textRef.current, { duration: 0.5, fontFamily: "CabinetGrotesk", scale: 1, ease: "sine.inOut" }) // Make the display font once imported
-            // .to(textRef.current, { duration: 1 })
-            // .to(
-            //     textRef.current,
-            //     { scale: 0, opacity: 0, duration: 1, ease: "elastic.out" },
-            //      // Wait for 1 second before starting the next animation
-            // )
+            .to(textRef.current, { duration: 0.3, fontFamily: "Satoshi", scale: 1.1, ease: "sine.inOut" })
+            .to(textRef.current, { duration: 0.3, fontFamily: "Whisper", scale: 1.2, ease: "sine.inOut" })
+            .to(textRef.current, { duration: 0.3, fontFamily: "Archivo", scale: 1.4, ease: "sine.inOut" })
+            .to(textRef.current, { duration: 0.3, fontFamily: "Rubik Bubbles", scale: 1.2, ease: "sine.inOut" })
+            .to(textRef.current, { duration: 0.3, fontFamily: "DM Serif Display", scale: 1.1, ease: "sine.inOut" })
+            .to(textRef.current, { duration: 0.5, fontFamily: "Libre Baskerville", scale: 1, ease: "sine.inOut" }) // Make the display font once imported
+            .to(textRef.current, { duration: 1 })
+            .to(
+                textRef.current,
+                { opacity: 0, duration: 1 },
+                 // Wait for 1 second before starting the next animation
+            )
             .to(
                 introRef.current,
                 { opacity: 0, duration: 0.1, display: 'none' }, // Fade out and hide the intro
@@ -36,7 +36,7 @@ export default function Home(props) {
             .fromTo(
                 desktopRef.current,
                 { opacity: 0, display: 'flex' },
-                { opacity: 1, duration: 0.1 } // Fade in the main content div
+                { opacity: 1, duration: 4 } // Fade in the main content div
             );
 
         return () => {
@@ -47,8 +47,8 @@ export default function Home(props) {
     return (
         <div className="flex max-h-screen bg-white h-screen overflow-hidden">
 
-            <div ref={introRef} className="absolute top-1/2 left-1/2 max-h-screen">
-                <div ref={textRef} className="text-4xl text-d-green">
+            <div ref={introRef} className="absolute min-h-screen w-screen">
+                <div ref={textRef} className="text-4xl text-d-green flex justify-center min-h-screen items-center grow">
                     Robby Rice
                 </div>
             </div>
@@ -79,8 +79,8 @@ export default function Home(props) {
                             <div className="absolute bottom-0 left-0 flex justify-between w-full">
                                 <h3 className="font-stix text-brown" id='curated'>curated works</h3>
                                 <svg id='circle-svg' width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_40_61)">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M43.24 23C43.24 34.1782 34.1782 43.24 23 43.24C11.8217 43.24 2.76 34.1782 2.76 23C2.76 11.8217 11.8217 2.76 23 2.76C34.1782 2.76 43.24 11.8217 43.24 23ZM46 23C46 35.7024 35.7024 46 23 46C10.2974 46 0 35.7024 0 23C0 10.2974 10.2974 0 23 0C35.7024 0 46 10.2974 46 23ZM23 25.53C24.3973 25.53 25.53 24.3973 25.53 23C25.53 21.6027 24.3973 20.47 23 20.47C21.6027 20.47 20.47 21.6027 20.47 23C20.47 24.3973 21.6027 25.53 23 25.53Z" fill="#889886" />
+                                    <g clipPath="url(#clip0_40_61)">
+                                        <path fillRule="evenodd" clipRule="evenodd" d="M43.24 23C43.24 34.1782 34.1782 43.24 23 43.24C11.8217 43.24 2.76 34.1782 2.76 23C2.76 11.8217 11.8217 2.76 23 2.76C34.1782 2.76 43.24 11.8217 43.24 23ZM46 23C46 35.7024 35.7024 46 23 46C10.2974 46 0 35.7024 0 23C0 10.2974 10.2974 0 23 0C35.7024 0 46 10.2974 46 23ZM23 25.53C24.3973 25.53 25.53 24.3973 25.53 23C25.53 21.6027 24.3973 20.47 23 20.47C21.6027 20.47 20.47 21.6027 20.47 23C20.47 24.3973 21.6027 25.53 23 25.53Z" fill="#889886" />
                                     </g>
                                     <defs>
                                         <clipPath id="clip0_40_61">
@@ -97,7 +97,11 @@ export default function Home(props) {
 
                     {/* Action Row */}
                     <div className="w-screen" id='action-row-top-border'>
-
+                        <div className="mt-5 flex flex-row gap-10">
+                            <h4 className="intro-link">software</h4>
+                            <h4 className="intro-link">design</h4>
+                            <h4 className="intro-link">me</h4>
+                        </div>
                     </div>
                 </div>
             </div>
