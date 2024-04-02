@@ -157,6 +157,21 @@ h6 {
   transform: translateX(-68%);
 }
 
+#software-bottom-border {
+  position: relative;
+}
+
+#software-bottom-border::after {
+  content: "";
+  position: absolute;
+  /* transform: translateY(5%); */
+  bottom: 0%;
+  left: 0;
+  width: 70%; /* Adjust this value to control the width of the border */
+  height: 1px; /* Adjust this value to control the thickness of the border */
+  background-color: #294126; /* Adjust the color of the border as needed */
+}
+
 #image-row-right-border img {
   position: absolute;
   z-index: 2;
@@ -249,4 +264,17 @@ h6 {
   100% {
       transform: rotate(90deg); /* Final position */
   }
+}
+
+.fancy-li p {
+  transition: color 0.5s ease;
+}
+
+.fancy-li:hover p {
+  color: black;
+}
+
+.fancy-li:hover svg {
+  transform: rotate(90deg);
+  transition: transform 0.5s ease; /* Add smooth transition for animation */
 }

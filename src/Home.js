@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import gsap from 'gsap'
+import { Link } from "react-router-dom";
 
 
 export default function Home(props) {
@@ -98,7 +99,7 @@ export default function Home(props) {
                     {/* Action Row */}
                     <div className="w-screen" id='action-row-top-border'>
                         <div className="mt-5 flex flex-row gap-10">
-                            <h4 className="intro-link">software</h4>
+                            <h4 className="intro-link"><Link to='/software'>software</Link></h4>
                             <h4 className="intro-link">design</h4>
                             <h4 className="intro-link">me</h4>
                         </div>
