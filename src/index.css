@@ -242,6 +242,20 @@ h6 {
   transform: translateY(-5%);
 }
 
+#software-right-nav-border {
+  position: relative;
+}
+
+#software-right-nav-border::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 1px;
+  height: 80%;
+  background-color: #294126;
+  transform: translateY(-15);
+}
+
 .intro-link:hover {
   opacity: 50%;
   transition-delay: 50ms;
@@ -278,3 +292,23 @@ h6 {
   transform: rotate(90deg);
   transition: transform 0.5s ease; /* Add smooth transition for animation */
 }
+
+.nav-tag {
+  transition: color 0.25s ease;
+  color: black;
+}
+
+.nav-tag:hover {
+  color: #294126;
+}
+
+.nav-tag-deselected {
+  transition: color 0.2s ease;
+  opacity: 20%;
+  color: #294126;
+}
+
+.nav-tag-deselected:hover {
+  color: black;
+}
+
