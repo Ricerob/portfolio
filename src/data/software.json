@@ -29,7 +29,7 @@
         "link": "https://marketplace.visualstudio.com/items?itemName=ricerob.stream-safe",
         "description": "vscode extension for streamers to avoid accidental leakage of sensitive information. javascript.",
         "tech_tags": ["javascript"],
-        "meta_tags": [""],
+        "meta_tags": [],
         "recruiter_score": 0.4,
         "dev_score": 0.6,
         "designer_score": 0.1,

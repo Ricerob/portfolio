@@ -171,8 +171,8 @@ export default function Software(props) {
                     <h1 className="text-d-green text-[100px] tracking-[-0.25rem]" id='software-bottom-border'>software</h1>
 
                     {/* Content */}
-                    <div className="overflow-y-scroll">
-                        <ul ref={projectsRef}>
+                    <div className="md:mx-10">
+                        <ul ref={projectsRef} className="overflow-y-scroll max-h-[calc(100vh-160px)] my-2">
                             {projects.map((proj, idx) => {
                                 return <div className="project" key={idx}>
                                     <ProjectTile info={proj} />
@@ -184,7 +184,7 @@ export default function Software(props) {
                 </div>
 
                 {/* Side navigation */}
-                <div className="flex flex-col h-screen w-1/5 justify-around relative" id='software-right-nav-border'>
+                <div className="hidden md:flex flex-col h-screen w-1/5 justify-around relative" id='software-right-nav-border'>
 
                     {/* Navigation */}
                     <div className="h-4/5 flex flex-col justify-center text-center px-10">

@@ -112,6 +112,30 @@ h6 {
   color: #294126;
 }
 
+#intro-name-mobile {
+  font-size: 95px;
+  letter-spacing: -9px;
+  font-family: 'Baskerville';
+  color: #294126;
+}
+
+#monstera-img-mobile {
+  width: 100%;
+  height: auto;
+  position: relative;
+  right: 0;
+  transform: translateX(50%) scale(1.8);
+}
+
+#water-img-mobile {
+  width: 100%;
+  height: auto;
+  position: relative;
+  right: 0;
+  transform: translateX(-50%) scale(1.3);
+}
+
+
 .grey {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
@@ -131,6 +155,14 @@ h6 {
 #landing-star-svg {
   /* transform: translateY(220%); */
   margin-top: 112px;
+  margin-right: 8px;
+  animation: rotateAnimation ease-in-out infinite;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+#landing-star-svg-mobile {
+  /* transform: translateY(220%); */
   margin-right: 8px;
   animation: rotateAnimation ease-in-out infinite;
   animation-duration: 3s;
@@ -229,6 +261,38 @@ h6 {
   cursor: pointer;
   font-family: 'STIXGeneral';
   transition: all 90ms ease;
+}
+
+.software-project::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #294126;
+  transform: translateX(5%);
+}
+
+.software-project::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 1px;
+  background-color: #294126;
+}
+
+.software-project-link-border::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #294126;
+  transform: translateY(35%);
 }
 
 .intro-link::after {
