@@ -68,20 +68,6 @@ export default function Software(props) {
 
     }, [userType])
 
-    // useEffect(() => {
-
-    //     tl.to('.project', {
-    //         opacity: 0,
-    //         duration: 0,
-    //     })
-    //         .to('.project', {
-    //             stagger: 0.5,
-    //             opacity: 1,
-    //             duration: 1
-    //         }).delay(1)
-
-    // }, [projects]);
-
     useEffect(() => {
         const oldProjects = [...data];
 

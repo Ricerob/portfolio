@@ -221,6 +221,16 @@ h6 {
   top: 15px;
 }
 
+#me-img {
+  width: 180px;
+  height: auto;
+}
+
+#neph-img {
+  width: 180px;
+  height: auto;
+}
+
 #terrace-img {
   width: 250px;
   height: auto;

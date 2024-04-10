@@ -1,0 +1,30 @@
+[
+    {
+        "title": "iowa state university",
+        "subtitle": "software engineering, german",
+        "dates": "aug 2019 - may 2023",
+        "description": "after being undeclared engineering, i fought against the c programming language and came out on top. declared software engineering with a german double major",
+        "next": "interned"
+    },
+    {
+        "title": "principal financial",
+        "subtitle": "software engineering intern",
+        "dates": "may 2021 - aug 2022",
+        "description": "my first summer at principal financial group was learning what real software engineering was in a devops team. my second summer i honed my skills in a full stack team, leading development of an api health monitoring tool",
+        "next": "graduated"
+    },
+    {
+        "title": "etalyc, inc",
+        "subtitle": "full stack software developer",
+        "dates": "june 2023 - ",
+        "description": "diving headfirst into building a full stack computer vision platform for traffic engineers along with maintaining an existing traffic performance application. mentored two talented interns and discuss product, design, and engineering daily.",
+        "next": "tinkered"
+    },
+    {
+        "title": "swift ta",
+        "subtitle": "founding engineer",
+        "dates": "2023 - ",
+        "description": "gpt3.5 brought my (first and foremost, friend, and) resident builder and i together to create a platform for students to upload class material and get a personal tutor for their class. full stack, all the ai tools, supabase, the whole 9 yards. insane learning experience",
+        "next": ""
+    }
+]

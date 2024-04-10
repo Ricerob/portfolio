@@ -138,8 +138,7 @@ export default function Home(props) {
                     <div className="w-screen" id='action-row-top-border'>
                         <div className="mt-5 flex flex-row gap-10">
                             <h4 className="intro-link"><Link to='/software'>software</Link></h4>
-                            <h4 className="intro-link">design</h4>
-                            <h4 className="intro-link">me</h4>
+                            <h4 className="intro-link"><Link to='/me'>me</Link></h4>
                         </div>
                     </div>
                 </div>
@@ -172,8 +171,7 @@ export default function Home(props) {
                     <div className="flex flex-row">
                         <div className="mt-5 flex flex-row gap-10 ml-3">
                             <h4 className="intro-link"><Link to='/software'>software</Link></h4>
-                            <h4 className="intro-link">design</h4>
-                            <h4 className="intro-link">me</h4>
+                            <h4 className="intro-link"><Link to='/me'>me</Link></h4>
                         </div>
                     </div>
                 </div>
