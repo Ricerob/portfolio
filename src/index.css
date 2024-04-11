@@ -231,6 +231,33 @@ h6 {
   height: auto;
 }
 
+#about-transition-word {
+  font-size: 24;
+  font-family: 'STIXGeneral';
+  cursor: pointer;
+  transition: transform 0.5s ease !important;
+}
+
+#about-transition-word:hover {
+  opacity: 0.5;
+  transform: translateY(5px);
+}
+
+.bobbing-animation {
+  animation: bobbing 2s infinite alternate ease-in-out;
+}
+
+@keyframes bobbing {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+
+
 #terrace-img {
   width: 250px;
   height: auto;

@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom'
 import AboutBlurb from './atoms/AboutBlurb'
+import { useState } from 'react'
 var data = require('./data/about')
+
 
 export default function About() {
 
+    const [showIndex, setShowIndex] = useState(0)
+
     return (
-        <div className="flex flex-col max-h-screen overflow-hidden bg-white h-screen mx-4">
+        <div className="flex flex-col max-h-screen overflow-hidden bg-white h-screen px-4">
 
             <div className="w-screen">
                 <h1 className="text-d-green text-[100px] tracking-[-0.25rem]" id='software-bottom-border'>about</h1>
@@ -43,7 +47,12 @@ export default function About() {
                 {/* Timeline */}
                 <div className="w-3/4 lg:w-1/2 flex flex-col border-[0.5px] border-l-green grow p-3 px-6 overflow-y-auto my-6 h-100">
                     {data.map((point, idx) => {
-                        return <AboutBlurb key={idx} title={point.title} subtitle={point.subtitle} dates={point.dates} description={point.description} />
+                        return <AboutBlurb transition={point.next} last={idx === showIndex} show={idx <= showIndex} next={idx === showIndex + 1} onClick={() => {
+                            if (idx === showIndex) {
+                                setShowIndex(index => index + 1);
+                            }
+                        }}
+                        key={idx} title={point.title} subtitle={point.subtitle} dates={point.dates} description={point.description} />
                     })}
                 </div>
 
