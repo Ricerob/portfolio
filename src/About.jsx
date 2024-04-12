@@ -58,7 +58,7 @@ export default function About() {
 
                 {/* Picture section */}
                 <div className="lg:w-1/5 hidden lg:flex flex-col grow items-center gap-10">
-                    <img className='grey' id='neph-img' src='/menneph.jpeg' alt='me and my nephew while i play guitar' />
+                    <img className='grey' id='neph-img' src='/menneph.jpg' alt='me and my nephew while i play guitar' />
                     <div>
                         <svg width="176" height="176" viewBox="0 0 176 176" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_203_17)">
