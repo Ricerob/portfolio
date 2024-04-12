@@ -24,8 +24,8 @@ export default function ProjectTile({ info }) {
                 </div>
             </div>
             {/* Image Col */}
-            <div className="flex flex-col">
-
+            <div className="hidden md:flex flex-col max-w-[35%] rounded px-5">
+                {info.images.length > 0 && <img className="border-[1px] rounded border-d-green max-h-[200px]" src={info.images[0]}/>}
             </div>
             {/* Link Col */}
             <div className={`flex flex-col p-3 relative`} >

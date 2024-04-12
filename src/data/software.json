@@ -1,7 +1,7 @@
 [
     {
         "name": "swiftta",
-        "images": [],
+        "images": ["./chat.png"],
         "link": "https://www.swift-ta.com/",
         "description": "full-stack SaaS for students to harness the power of modern LLMs. react + nextjs. tailwind. python backend. supabase.",
         "tech_tags": ["full stack"],
@@ -13,7 +13,7 @@
     },
     {
         "name": "wesleylife produce tracker",
-        "images": [],
+        "images": ["./wesley.jpeg"],
         "link": "",
         "description": "excel + google app script to help a local not-for-profit track stages of their vertical farming operation. google app script.",
         "tech_tags": ["javascript"],

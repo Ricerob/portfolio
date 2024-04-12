@@ -256,7 +256,14 @@ h6 {
   }
 }
 
-
+.gradient-text {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to top, transparent 40%, #294126 55%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
 #terrace-img {
   width: 250px;

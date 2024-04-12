@@ -2,13 +2,20 @@ import gsap from 'gsap'
 import { useEffect } from 'react'
 import { useRef } from 'react'
 
-export default function AboutBlurb({last, transition, title, subtitle, dates, description, show, next, onClick }) {
+export default function AboutBlurb({ last, transition, title, subtitle, dates, description, show, next, onClick }) {
 
     const containerRef = useRef(null)
 
-    
+
     if (!show && !next) {
         return <></>
+    }
+    else if (!show && next) {
+        return <div className='flex flex-col'>
+            <div className={`bg-l-green w-100 h-min flex flex-row my-3 p-2 justify-between bg-gradient-to-t from-white from-50%`}>
+                <h2 className="gradient-text text-d-green font-baskerville tracking-[-0.2rem] pl-1 pt-1 bg-clip-text">{title}</h2>
+            </div>
+        </div>
     }
     return (
         <div ref={containerRef} className='flex flex-col'>
@@ -23,7 +30,7 @@ export default function AboutBlurb({last, transition, title, subtitle, dates, de
                 </div>
             </div>
             {show && <div className='w-100 flex-row justify-center flex' onClick={onClick}>
-                <p className={`${last ? 'bobbing-animation': ''}`} id={'about-transition-word'}>{transition}</p>
+                <p className={`${last ? 'bobbing-animation' : ''}`} id={'about-transition-word'}>{transition}</p>
             </div>}
         </div>
 
