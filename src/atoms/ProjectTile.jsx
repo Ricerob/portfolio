@@ -29,7 +29,7 @@ export default function ProjectTile({ info }) {
             </div>
             {/* Link Col */}
             <div className={`flex flex-col p-3 relative`} >
-                <Link to={info?.link} className="bg-l-brown w-5 flex flex-col grow rounded-full cursor-pointer justify-between items-center" id='project-link-box'>
+                <Link target="_blank" rel="noopener noreferrer" to={info?.link} className="bg-l-brown w-5 flex flex-col grow rounded-full cursor-pointer justify-between items-center" id='project-link-box'>
                     <div className="p-3">
                         <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.2017 4.07141L1.64709 0.268745C1.39056 0.0930086 1.1321 0 0.917263 0C0.501922 0 0.244995 0.333341 0.244995 0.891312V9.10998C0.244995 9.66731 0.501598 10 0.915968 10C1.13113 10 1.38546 9.90691 1.64255 9.73069L7.19975 5.9281C7.55714 5.68316 7.75505 5.35354 7.75505 4.99956C7.75513 4.64581 7.55948 4.31628 7.2017 4.07141Z" fill="#FFFFF4" />

@@ -14,7 +14,7 @@
     {
         "name": "wesleylife produce tracker",
         "images": ["./wesley.jpeg"],
-        "link": "",
+        "link": "https://github.com/Ricerob/wesleylife",
         "description": "excel + google app script to help a local not-for-profit track stages of their vertical farming operation. google app script.",
         "tech_tags": ["javascript"],
         "meta_tags": ["professional", "active", "wip"],

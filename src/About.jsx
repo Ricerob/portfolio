@@ -79,9 +79,9 @@ export default function About() {
 
             <div className="flex flex-row w-full justify-center items-end bottom-0 my-4">
                 <div className="flex flex-row gap-5 justify-around max-w-2xl">
-                    <h5><Link to='https://www.linkedin.com/in/ricerob'>linkedin</Link></h5>
-                    <h5><Link to='mailto:riceslif@gmail.com'>email</Link></h5>
-                    <h5><Link to='https://www.github.com/Ricerob'>github</Link></h5>
+                    <h5><Link target="_blank" rel="noopener noreferrer" to='https://www.linkedin.com/in/ricerob'>linkedin</Link></h5>
+                    <h5><Link target="_blank" rel="noopener noreferrer" to='mailto:riceslif@gmail.com'>email</Link></h5>
+                    <h5><Link target="_blank" rel="noopener noreferrer" to='https://www.github.com/Ricerob'>github</Link></h5>
                 </div>
             </div>
 
