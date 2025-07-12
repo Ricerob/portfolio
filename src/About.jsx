@@ -31,9 +31,9 @@ export default function About() {
                             <li><h4>software engineer</h4></li>
                             <li><h4>iowa state university</h4></li>
                             <li><h4>design enthusiast</h4></li>
-                            <li><h4>reading guy</h4></li>
+                            <li><h4>urbanist</h4></li>
                             <li><h4>cool uncle</h4></li>
-                            <li><h4>kann deutsch</h4></li>
+                            <li><h4>#1 grizz basketball fan</h4></li>
                         </ul>
                     </div>
                     <div className='p-4 border-[0.5px] border-l-green'>
